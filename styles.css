@@ -66,7 +66,7 @@ body {
 
 /* HERO LOGO */
 .hero-logo {
-    max-width: 350px; /* Increased size by 50px for desktop */
+    max-width: 350px; /* Keeping hero logo size large on desktop */
     height: auto;
     margin-bottom: 15px;
 }
@@ -140,11 +140,15 @@ body {
     border-top: 1px solid #ddd;
 }
 
-/* RESPONSIVE DESIGN - ONLY ADJUSTING HERO FOR MOBILE */
+/* RESPONSIVE DESIGN - MOBILE HEADER FIX ONLY */
 @media screen and (max-width: 768px) {
+    .navbar {
+        height: 80px; /* Slightly larger height for better spacing */
+    }
+
     .hero {
         height: auto;
-        padding: 200px 20px 20px; /* Increased padding only for mobile */
+        padding: 220px 20px 20px; /* Increased padding so hero logo moves down further */
     }
 
     .hero-logo {
@@ -167,6 +171,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    .navbar {
+        height: 85px; /* Slightly taller header for mobile to prevent overlap */
+    }
+
     .hero-content h1 {
         font-size: 1.5rem;
     }
