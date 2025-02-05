@@ -29,11 +29,7 @@ body {
     margin: 0 auto;
 }
 
-.nav-logo {
-    max-width: 80px;
-    height: auto;
-}
-
+/* NAVIGATION LINKS */
 .nav-links {
     display: flex;
     gap: 20px;
@@ -41,13 +37,19 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: #222;
+    color: #222; /* Ensuring links stay black */
     font-weight: bold;
     transition: color 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
     color: #555;
+}
+
+/* LOGO IN HEADER */
+.nav-logo {
+    max-width: 80px;
+    height: auto;
 }
 
 /* HERO SECTION */
@@ -59,24 +61,17 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 120px 20px 20px; /* Increased padding to prevent navbar overlap */
+    padding: 100px 20px 20px; /* Keeps desktop unchanged */
 }
 
+/* HERO LOGO */
 .hero-logo {
-    max-width: 300px;
+    max-width: 350px; /* Increased size by 50px for desktop */
     height: auto;
     margin-bottom: 15px;
 }
 
-.hero-content h1 {
-    font-size: 2.5rem;
-}
-
-.hero-buttons {
-    margin-top: 20px;
-}
-
-/* CTA Button */
+/* CTA BUTTONS */
 .cta-btn {
     display: inline-block;
     padding: 12px 24px;
@@ -145,42 +140,19 @@ body {
     border-top: 1px solid #ddd;
 }
 
-/* RESPONSIVE DESIGN */
-@media screen and (max-width: 1024px) {
-    .hero {
-        height: 60vh;
-        padding-top: 140px; /* More padding for Safari on tablets */
-    }
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    .hero-logo {
-        max-width: 250px;
-    }
-}
-
+/* RESPONSIVE DESIGN - ONLY ADJUSTING HERO FOR MOBILE */
 @media screen and (max-width: 768px) {
-    .nav-container {
-        flex-direction: column;
-        padding: 15px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     .hero {
         height: auto;
-        padding: 160px 20px 20px; /* Ensuring navbar doesn't overlap hero content */
+        padding: 200px 20px 20px; /* Increased padding only for mobile */
+    }
+
+    .hero-logo {
+        max-width: 220px; /* Slightly smaller for better visibility */
     }
 
     .hero-content h1 {
         font-size: 1.8rem;
-    }
-
-    .hero-logo {
-        max-width: 220px;
     }
 
     .cta-btn {
@@ -200,16 +172,12 @@ body {
     }
 
     .hero-logo {
-        max-width: 180px;
+        max-width: 180px; /* Further adjustment for small screens */
     }
 
     .cta-btn {
         font-size: 0.9rem;
         padding: 8px 16px;
-    }
-
-    .nav-links {
-        gap: 8px;
     }
 
     .content-wrapper {
