@@ -59,7 +59,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 100px 20px 20px; /* Fix for Safari header overlap issue */
+    padding: 120px 20px 20px; /* Increased padding to prevent navbar overlap */
 }
 
 .hero-logo {
@@ -76,6 +76,7 @@ body {
     margin-top: 20px;
 }
 
+/* CTA Button */
 .cta-btn {
     display: inline-block;
     padding: 12px 24px;
@@ -148,7 +149,7 @@ body {
 @media screen and (max-width: 1024px) {
     .hero {
         height: 60vh;
-        padding-top: 120px; /* Extra padding for Safari on tablets */
+        padding-top: 140px; /* More padding for Safari on tablets */
     }
     .hero-content h1 {
         font-size: 2rem;
@@ -171,7 +172,7 @@ body {
 
     .hero {
         height: auto;
-        padding: 140px 20px 20px; /* Ensuring navbar doesn't overlap hero content */
+        padding: 160px 20px 20px; /* Ensuring navbar doesn't overlap hero content */
     }
 
     .hero-content h1 {
