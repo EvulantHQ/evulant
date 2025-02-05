@@ -3,60 +3,148 @@
 <head>
     <link rel="icon" type="image/png" href="favicon.png">
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; img-src 'self' data:;">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Evulant</title>
+    <title>Evulant - Scaling Influence & Building Brands</title>
+    <meta name="description" content="Evulant is a forward-thinking digital ecosystem providing AI, SaaS, brand strategy, and digital marketing services to scale businesses and creators.">
+    <meta name="keywords" content="Evulant, brand growth, AI solutions, SaaS development, digital marketing, content creators, automation">
+    <meta name="author" content="Evulant">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags for Social Sharing -->
+    <meta property="og:title" content="Evulant - Scaling Influence & Building Brands">
+    <meta property="og:description" content="Evulant provides cutting-edge AI, SaaS, and digital solutions for creators and businesses looking to scale.">
+    <meta property="og:image" content="logo.png">
+    <meta property="og:url" content="https://evulant.co">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Evulant - Scaling Influence & Building Brands">
+    <meta name="twitter:description" content="Providing AI-powered and digital solutions for content creators, businesses, and SaaS development.">
+    <meta name="twitter:image" content="logo.png">
+
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Evulant",
+      "url": "https://evulant.co",
+      "logo": "logo.png",
+      "description": "Evulant is a digital ecosystem providing AI, SaaS, and brand strategy solutions for businesses and creators.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "evulant@outlook.com",
+        "contactType": "customer service"
+      }
+    }
+    </script>
 </head>
 <body>
-    <div class="container">
-        <img src="logo.png" alt="Evulant Logo" class="logo">
-        <h1>Scaling Influence. Building Brands.</h1>
-        <p>We create timeless digital experiences that empower creators, entrepreneurs, and brands to scale without limits.</p>
-        
-        <div class="links">
-            <a href="https://evulant.media">Explore Evulant Media</a>
-            <a href="https://evulant.agency">Join Evulant Agency</a>
-            <a href="#">Future SaaS & Web Development</a>
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="logo.png" alt="Evulant Logo" class="nav-logo">
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </div>
         </div>
-        
-        <section class="about">
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <img src="logo.png" alt="Evulant Logo" class="hero-logo">
+            <h1>Scaling Influence. Building Brands.</h1>
+            <p>Timeless digital experiences for creators & businesses.</p>
+            <div class="hero-buttons">
+                <a href="https://evulant.media" class="cta-btn">Explore Evulant Media</a>
+                <a href="https://evulant.agency" class="cta-btn">Join Evulant Agency</a>
+                <a href="#" class="cta-btn">Future SaaS & Web Development</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="content-wrapper">
             <h2>About Evulant</h2>
             <p>Evulant is a forward-thinking digital ecosystem designed to help creators and businesses grow. Whether you're building an audience, launching a product, or scaling your brand, we provide the tools and insights to make it happen.</p>
-        </section>
-        
-        <section class="services">
+        </div>
+    </section>
+    
+    <section id="services" class="services">
+        <div class="content-wrapper">
             <h2>Our Services</h2>
-            <div class="service-item">
-                <h3>OnlyFans Agency</h3>
-                <p>Providing expert marketing, management, and growth strategies for content creators in the adult industry.</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>OnlyFans Agency</h3>
+                    <p>Providing expert marketing, management, and growth strategies for content creators in the adult industry.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Brand Strategy</h3>
+                    <p>We help you define your brand’s voice, mission, and presence in the digital space.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Affiliate Marketing & Digital Growth</h3>
+                    <p>Leveraging digital platforms to build scalable, passive income streams through strategic content and partnerships.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Monetization Consulting</h3>
+                    <p>Turn your brand into a revenue-generating powerhouse with smart monetization strategies.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Future SaaS Development</h3>
+                    <p>Innovative software solutions tailored for digital entrepreneurs, content creators, and online businesses.</p>
+                </div>
+                <div class="service-card">
+                    <h3>AI & Automation</h3>
+                    <p>AI-driven solutions that optimize efficiency, growth, and digital transformation.</p>
+                </div>
             </div>
-            <div class="service-item">
-                <h3>Brand Strategy</h3>
-                <p>We help you define your brand’s voice, mission, and presence in the digital space.</p>
-            </div>
-            <div class="service-item">
-                <h3>Affiliate Marketing & Digital Growth</h3>
-                <p>Leveraging digital platforms to build scalable, passive income streams through strategic content and partnerships.</p>
-            </div>
-            <div class="service-item">
-                <h3>Monetization Consulting</h3>
-                <p>Turn your brand into a revenue-generating powerhouse with smart monetization strategies.</p>
-            </div>
-            <div class="service-item">
-                <h3>Future SaaS Development</h3>
-                <p>Innovative software solutions tailored for digital entrepreneurs, content creators, and online businesses.</p>
-            </div>
-        </section>
-        
-        <section class="contact">
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="content-wrapper">
             <h2>Get in Touch</h2>
             <p>Have questions or want to collaborate? Reach out to us.</p>
             <a href="mailto:evulant@outlook.com" class="contact-btn">Contact Us</a>
-        </section>
-        
-        <div class="footer">
-            © 2025 Evulant. All Rights Reserved.
         </div>
-    </div>
+    </section>
+    
+    <footer class="footer">
+        <p>© 2025 Evulant. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth Scroll for navigation links
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Fade-in animation for sections on scroll
+        const sections = document.querySelectorAll(".content-wrapper");
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("fade-in");
+                }
+            });
+        }, { threshold: 0.2 });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
